@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+$light_gray: hsla(0, 0%, 74%, 1);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+.header {
+  margin: 4.4375rem 0.75rem 2.375rem;
+  font-family: "Poppins";
+  display: grid;
+  grid-template-columns: 1fr;
+  &__title {
+    font-family: "PT Serif";
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    letter-spacing: -0.045em;
+  }
+  &__subtitle-wrapper {
+    margin-top: 2.375rem;
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1, 6875rem;
+    text-transform: uppercase;
+    // margin-top: 2.375rem;
+  }
+  &__paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1, 3125rem;
+    margin-top: 0.625rem;
+  }
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  // grid-template-columns: 1fr 1fr;
+  // gap: 1.5625rem;
+}
+.card {
+  display: flex;
+  margin: 0 0.75rem;
+  // grid-template-columns: 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  width: 9.75rem;
+  height: 14.8125rem;
+  // width: 100%;
+  flex-flow: row wrap;
+  &__image {
+    height: 13.0625rem;
+    width: 8.6875rem;
+  }
+  &__caption {
+    font-family: "PT Serif";
+    width: 11px;
+    height: 130px;
+    margin-left: 6px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  &__paragraph {
+    font-size: 10px;
+    font-weight: 400;
+    // line-height: 0.8125rem;
+    transform-origin: 0;
+    transform: rotate(90deg) translate(-6px, -6px);
+    width: 130px;
+  }
+  &__title {
+    margin-bottom: 0.93rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+  &:nth-child(odd) {
+    margin-top: 0;
+  }
+  &:nth-child(even) {
+    margin-top: 3rem;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: hsl(0, 0%, 66%);
+  margin: 8rem auto 1.5rem;
+
+  &__anchor {
+    box-shadow: inset 0 0 0 0 hsl(0, 0%, 35%);
+    text-decoration: none;
+    font-weight: 600;
+    color: hsl(0, 0%, 35%);
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    &:hover {
+      box-shadow: inset 100px 0 0 0 hsl(0, 0%, 35%);
+      color: hsl(0, 0%, 80%);
+    }
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 110px auto;
+    &__subtitle-wrapper {
+      width: 70%;
+      margin-top: 0;
+    }
+    &__paragraph {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+  .main {
+    width: 80%;
+    margin: 0 auto;
+    row-gap: 1.68rem;
+    column-gap: 3.5rem;
+  }
+  .card {
+    width: 16.5rem;
+    height: 30.9375rem;
+    align-content: flex-start;
+    &__image {
+      height: 21.3125rem;
+      width: 14.875rem;
+    }
+    &__paragraph {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    &:nth-child(odd),
+    &:nth-child(even) {
+      margin-top: 0;
+    }
+    &:nth-child(2),
+    &:nth-child(5) {
+      padding-top: 6rem;
+    }
+  }
+  .footer {
+    margin: 7rem auto 1.5rem;
+  }
+
+  /*
+left: 240px;
+top: 330px;
+border-radius: 0px;
+
+*/
+}

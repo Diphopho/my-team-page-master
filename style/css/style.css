@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+.header {
+  margin: 4.4375rem 0.75rem 2.375rem;
+  font-family: "Poppins";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.header__title {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  letter-spacing: -0.045em;
+}
+
+.header__subtitle-wrapper {
+  margin-top: 2.375rem;
+}
+
+.header__subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1, 6875rem;
+  text-transform: uppercase;
+}
+
+.header__paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1, 3125rem;
+  margin-top: 0.625rem;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0.75rem;
+  width: 9.75rem;
+  height: 14.8125rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.card__image {
+  height: 13.0625rem;
+  width: 8.6875rem;
+}
+
+.card__caption {
+  font-family: "PT Serif";
+  width: 11px;
+  height: 130px;
+  margin-left: 6px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.card__paragraph {
+  font-size: 10px;
+  font-weight: 400;
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
+  -webkit-transform: rotate(90deg) translate(-6px, -6px);
+          transform: rotate(90deg) translate(-6px, -6px);
+  width: 130px;
+}
+
+.card__title {
+  margin-bottom: 0.93rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+.card:nth-child(odd) {
+  margin-top: 0;
+}
+
+.card:nth-child(even) {
+  margin-top: 3rem;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a8a8a8;
+  margin: 8rem auto 1.5rem;
+}
+
+.footer__anchor {
+  -webkit-box-shadow: inset 0 0 0 0 #595959;
+          box-shadow: inset 0 0 0 0 #595959;
+  text-decoration: none;
+  font-weight: 600;
+  color: #595959;
+  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.footer__anchor:hover {
+  -webkit-box-shadow: inset 100px 0 0 0 #595959;
+          box-shadow: inset 100px 0 0 0 #595959;
+  color: #cccccc;
+}
+
+@media screen and (min-width: 376px) {
+  .header {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 110px auto;
+  }
+  .header__subtitle-wrapper {
+    width: 70%;
+    margin-top: 0;
+  }
+  .header__paragraph {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .main {
+    width: 80%;
+    margin: 0 auto;
+    row-gap: 1.68rem;
+    -webkit-column-gap: 3.5rem;
+            column-gap: 3.5rem;
+  }
+  .card {
+    width: 16.5rem;
+    height: 30.9375rem;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .card__image {
+    height: 21.3125rem;
+    width: 14.875rem;
+  }
+  .card__paragraph {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .card__title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .card:nth-child(odd), .card:nth-child(even) {
+    margin-top: 0;
+  }
+  .card:nth-child(2), .card:nth-child(5) {
+    padding-top: 6rem;
+  }
+  .footer {
+    margin: 7rem auto 1.5rem;
+  }
+  /*
+left: 240px;
+top: 330px;
+border-radius: 0px;
+
+*/
+}
+/*# sourceMappingURL=style.css.map */
